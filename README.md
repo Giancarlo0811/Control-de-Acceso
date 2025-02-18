@@ -56,3 +56,5 @@ CLAVE POR DEFECTO: 1234
 - Led RGB
 - Resistencias, capacitores, diodos, transistores
 - Oscilador de cristal de 4MHz
+
+PDF del proyecto: [Proyecto](Proyecto_Control_de_Acceso.pdf)
