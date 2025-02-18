@@ -9,7 +9,7 @@ Al pulsar cualquiera de las teclas del Teclado, aparece un pequeño menú de opc
 -	Ingresar Clave: Esta opción permite ingresar la clave actual para acceder. 
 -	Cambiar Clave: Esta opción permite cambiar la clave actual por una nueva. Se preguntará primero por la clave actual para confirmar el cambio de clave.
 
-El circuito cuenta también con un Led RGB que indica que el acceso se autorizó o fue negado. Además, también tiene un Zumbador (Buzzer) que suena sólo cuando el acceso fue negado. Se agregó un Relé que controla una carga (por ejemplo un LED), el cual simulará la apertura de la puerta.
+El circuito cuenta también con un Led RGB que indica que el acceso se autorizó o fue negado. Además, también tiene un Zumbador (Buzzer) que suena sólo cuando el acceso fue negado. Se agregó un Relé que controla una carga (por ejemplo un bombillo), el cual simulará la apertura de la puerta.
 
 Mientras no se está ingresando ningún código, en la pantalla se muestra el nombre de una empresa ficticia, la Hora y la Temperatura.
 
@@ -27,10 +27,12 @@ Para la parte de la temperatura, se utilizó el sensor Analógico LM35.
 - LED RGB y Buzzer (Zumbador): 
     - LED Azul: Para indicar que el teclado está en uso. 
     - LED Verde: Para indicar que el acceso fue aprobado o si el cambio de clave fue correcto.
-    - LED Rojo: Para indicar que el acceso fue denegado o que la clave actual introducida fue incorrecta al momento de cambiar la clave (antes de admitir el cambio de clave se pide ingresar primero la clave actual).
-    - Buzzer: Suena cuando el acceso fue denegado o la clave actual fue introducida de forma incorrecta.
-- Relé: Simula si se abrió o no la puerta. En caso de que el acceso fue permitido se abre, en caso de que fue denegado, no se abre.
-- La clave es almacenada en la memoria EEPROM del PIC. Para confirmar o no el acceso, se lee la clave actual en la EEPROM. En caso de cambiar la clave actual por una nueva, se escribe la nueva en la EEPROM.
+    - LED Rojo: Para indicar que el acceso fue denegado o que el cambio de clave fue incorrecto.
+    - Buzzer: Suena cuando el acceso fue denegado o el cambio de clave fue incorrecto.
+- Relay: Simula si se abrió o no la puerta. En caso de que el acceso fue permitido se abre la puerta (en la simulación un bombillo se prende), en caso de que fue denegado no se abre la puerta (bombillo apagado).
+- La clave es almacenada en la memoria EEPROM del PIC.
+
+CLAVE POR DEFECTO: 1234
 
 ## Montaje en protoboard
 
