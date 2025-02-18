@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name=".ca/dist/PRO_Comparison/production\Control_de_Acceso.X.production.hex">
+    <memory name="program">
+      <units>words</units>
+      <length>8192</length>
+      <used>7991</used>
+      <free>201</free>
+    </memory>
+    <memory name="data">
+      <units>bytes</units>
+      <length>512</length>
+      <used>343</used>
+      <free>169</free>
+    </memory>
+  </executable>
+</project>
