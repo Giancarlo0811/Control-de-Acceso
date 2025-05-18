@@ -1,4 +1,5 @@
 # Control-de-Acceso
+Proyecto desarrollado como parte de la asignatura **EC3081 Laboratorio de Proyectos** en la Universidad Simón Bolívar.
 
 ## Descripción del proyecto
 
